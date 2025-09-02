@@ -1,5 +1,7 @@
 package Chap03.Page59;
 
+import java.util.Arrays;
+
 public class ArrayExample {
     public static void main(String[] args) {
         int[] nums;               // Step 1: Declare the array variable
@@ -16,6 +18,14 @@ public class ArrayExample {
 
         // Optional: Print to test
         System.out.println("Element at index 2 is: " + nums[2]);
+
+        //print entire array using a for loop
+        for (int i = 0; i < nums.length; i++) {
+            System.out.println("Element at index " + i + " is: " + nums[i] + " ");
+        }
+
+        //Print the entire array:
+        System.out.println(Arrays.toString(nums));
     }
 }
 
