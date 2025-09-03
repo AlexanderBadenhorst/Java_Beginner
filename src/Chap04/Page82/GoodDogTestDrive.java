@@ -1,7 +1,7 @@
 package Chap04.Page82;
 
 class GoodDog {
-    private int size;
+    private int size; //private forces encapsulation so that any modifications must first go through the getter and setter
 
     public int getSize() {
         return size;
