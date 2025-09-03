@@ -9,5 +9,9 @@ public class Dog {
     void bark() {
         System.out.println("Ruff! Ruff!");
     }
+
+    void eat(){
+        System.out.println("The dog is eating!");
+    }
 }
 

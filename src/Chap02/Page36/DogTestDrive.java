@@ -5,6 +5,7 @@ public class DogTestDrive {
         Dog d = new Dog();   // Create a Dog object
         d.size = 40;        // Set the size instance variable
         d.bark();           // Call the bark() method
+        d.eat();
     }
 }
 
