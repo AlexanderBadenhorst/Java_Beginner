@@ -20,23 +20,31 @@ class AddThing {
 }
 
 class Foo {
-    public void go() {
-        int x; // local variable declared but NOT initialized
+    public int go() {
+        //int x; // local variable declared but NOT initialized, local variables have no default value
         // int z = x + 3;
         // ❌ ERROR: local variables must be initialized before use
         // If you uncomment the line above, the compiler will complain
+        //example for how it would work:
+        int x;           // declare
+        x = 7;           // assign a value before using
+        int z = x + 3;   // works, z = 10
+        return z;
     }
 }
 
 public class TestClasses {
     public static void main(String[] args) {
-        // Create an AddThing object
+        // Create an AddThing object called at
         AddThing at = new AddThing();
 
         // Set the value of 'a' (otherwise it would stay 0)
         at.a = 5;
 
+        Foo b = new Foo();
+        System.out.println("Sum of x + 3 is: " + b.go());
+
         // Call the add() method and print the result (5 + 12 = 17)
-        System.out.println("Sum is: " + at.add());
+        System.out.println("Sum of a + b is: " + at.add());
     }
 }
