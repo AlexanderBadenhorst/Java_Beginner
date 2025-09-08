@@ -33,7 +33,6 @@ class WordBank {
         words.add("variable");
         words.add("encapsulation");
         words.add("arraylist");
-        words.add("polymorph"); // cheeky teaser :)
         words.add("constructor");
         words.add("loop");
         words.add("condition");
