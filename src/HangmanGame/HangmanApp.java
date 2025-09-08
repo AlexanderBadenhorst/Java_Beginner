@@ -19,8 +19,6 @@ public class HangmanApp { // public class must match file name
 
         // Create a word bank with a default list of words
         WordBank bank = new WordBank();
-        // Example: you can add custom words like this:
-        // bank.add("pipeline"); bank.add("hibernate");
 
         // Get a random target word from the bank
         String target = bank.getRandomWord();
