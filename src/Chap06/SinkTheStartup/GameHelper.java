@@ -112,8 +112,8 @@ public class GameHelper {
 
     // Convert a single numeric index into alpha-numeric grid format
     private String getAlphaCoordsFromIndex(int index) {
-        int row = calcRowFromIndex(index);            // Row number
-        int column = index % GRID_LENGTH;             // Column number
+        int row = calcRowFromIndex(index);            // get row number
+        int column = index % GRID_LENGTH;             // get numeric column value
         String letter = ALPHABET.substring(column, column + 1); // Convert to a–g
         return letter + row;                          // Combine letter + row
     } // end getAlphaCoordsFromIndex
