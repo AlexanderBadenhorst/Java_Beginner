@@ -96,7 +96,7 @@ public class GameHelper {
     // Mark chosen positions as occupied
     private void savePositionToGrid(int[] startupCoords) {
         for (int index : startupCoords) {
-            grid[index] = 1;
+            grid[index] = 1; // marks grid position as 'used'
         }
     } // end savePositionToGrid
 
