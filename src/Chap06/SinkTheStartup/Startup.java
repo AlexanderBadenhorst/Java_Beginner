@@ -35,7 +35,7 @@ public class Startup {
             // If no cells remain, the Startup is sunk
             if (locationCells.isEmpty()) {
                 result = "kill";
-                System.out.println("Ouch! You sunk " + name + " : ( ");
+                System.out.println("Ouch! You sunk " + name + " :( ");
             } else {
                 // Otherwise, it's just a "hit"
                 result = "hit";
