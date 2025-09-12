@@ -17,4 +17,11 @@ public class Animal {
     public void makeNoise() {
         System.out.println("This animal is making noise");
     }
+
+    public void reactToShot() {
+        makeNoise(); // polymorphic
+        roam();      // polymorphic
+        eat();       // polymorphic
+        System.out.println(); // blank line
+    }
 }

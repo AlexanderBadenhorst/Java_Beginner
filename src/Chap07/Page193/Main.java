@@ -2,17 +2,22 @@ package Chap07.Page193;
 
 public class Main {
     public static void main(String[] args) {
-        Overloads obj = new Overloads();
+        Overloads obj = new Overloads(); // Create an instance to call instance methods on
 
-        // Test overloaded addNums
-        System.out.println("int addNums: " + obj.addNums(3, 4));          // Should print 7
-        System.out.println("double addNums: " + obj.addNums(3.5, 4.5));   // Should print 8.0
+        // Test overloaded addNums:
+        // Compiler picks the int version because the arguments are ints.
+        System.out.println("int addNums: " + obj.addNums(3, 4));          // Prints 7
 
-        // Test overloaded setUniqueID
-        obj.setUniqueID("ABC123");
-        System.out.println("Unique ID (string): " + obj.getUniqueID());
+        // Here the compiler picks the double version because the arguments are doubles.
+        System.out.println("double addNums: " + obj.addNums(3.5, 4.5));   // Prints 8.0
 
-        obj.setUniqueID(98765);  // Calls int version, which internally calls String version
-        System.out.println("Unique ID (int): " + obj.getUniqueID());
+        // Test overloaded setUniqueID (String version)
+        obj.setUniqueID("ABC123"); // Calls setUniqueID(String)
+        System.out.println("Unique ID (string): " + obj.getUniqueID());   // ABC123
+
+        // Test overloaded setUniqueID (int version)
+        // Calls setUniqueID(int) → converts to String → calls setUniqueID(String)
+        obj.setUniqueID(98765);
+        System.out.println("Unique ID (int): " + obj.getUniqueID());      // "98765"
     }
 }

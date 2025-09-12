@@ -14,9 +14,13 @@ public class PetOwner {
 
         // Give shots to different animals → polymorphism in action
         vet.giveShot(dog);   // Uses Dog's overridden methods where available
+
         vet.giveShot(hippo); // Uses Hippo's overridden methods
+
         vet.giveShot(cat);   // Uses Cat's overridden methods
+
         vet.giveShot(lion);  // Uses Lion's overridden methods
+
     }
 
     // Entry point of the program

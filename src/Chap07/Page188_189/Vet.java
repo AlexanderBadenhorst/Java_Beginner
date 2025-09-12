@@ -6,9 +6,10 @@ public class Vet {
     // Method that takes any Animal object as a parameter
     public void giveShot(Animal a) {
         // Calls methods on the Animal → actual version depends on the object's real type
-        a.makeNoise();  // Polymorphic call: Dog barks, Cat meows, Hippo grunts, etc.
-        a.roam();       // Each subclass can override this
-        a.eat();        // Each subclass can override this
+//        a.makeNoise();  // Polymorphic call: Dog barks, Cat meows, Hippo grunts, etc.
+//        a.roam();       // Each subclass can override this
+//        a.eat();        // Each subclass can override this
+        a.reactToShot();
         System.out.println(); // Print blank line to separate output
     }
 }
