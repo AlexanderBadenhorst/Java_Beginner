@@ -1,7 +1,7 @@
 package Chap08.Page209;
 
 public class MyAnimalList {
-    private Animal[] animals = new Animal[5];
+    private Animal[] animals = new Animal[5]; //Can hodl ANY Animal subtype
     private int nextIndex = 0;
 
     public void add(Animal a) {
