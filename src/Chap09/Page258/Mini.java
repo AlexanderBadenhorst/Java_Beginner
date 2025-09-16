@@ -1,6 +1,6 @@
 package Chap09.Page258;
 
-import java.awt.Color;
+import java.awt.*;
 
 class Mini extends Car {
     private Color color;
@@ -17,7 +17,7 @@ class Mini extends Car {
 
     public Mini(int size) {
         this(Color.RED);
-        super(size);  // <-- This line will cause a compile error!
+//        super(size);  // <-- This line will cause a compile error!
     }
 }
 

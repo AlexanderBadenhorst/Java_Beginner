@@ -4,7 +4,7 @@ package Chap09.Page244;
 public class UseADuck {
     public static void main(String[] args) {
         Duck duck = new Duck();  // Create a new Duck object
-        Dog dog = new Dog();
+        Budgie budgie = new Budgie();
     }
 }
 
@@ -17,10 +17,10 @@ class Duck {
     }
 }
 
-class Dog {
+class Budgie {
 
     // Constructor that prints "Barks" when a Dog is created
-    public Dog() {
-        System.out.println("Barks");
+    public Budgie() {
+        System.out.println("Tweets");
     }
 }
