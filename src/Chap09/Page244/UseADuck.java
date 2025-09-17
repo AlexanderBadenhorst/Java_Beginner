@@ -19,8 +19,8 @@ class Duck {
 
 class Budgie {
 
-    // Constructor that prints "Barks" when a Dog is created
+    // Constructor that prints "Tweet tweet" when a Budgie is created
     public Budgie() {
-        System.out.println("Tweets");
+        System.out.println("Tweet tweet");
     }
 }

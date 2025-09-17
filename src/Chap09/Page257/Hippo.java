@@ -1,12 +1,10 @@
 package Chap09.Page257;
 
-// It inherits from the Animal class
+// Subclass of Animal
 public class Hippo extends Animal {
 
-    // Constructor for Hippo that takes a name
-    // Calls the constructor of Animal using 'super'
+    // Must call a superclass constructor explicitly because Animal has NO no-arg ctor
     public Hippo(String name) {
-        super(name); // Passes the name to the Animal constructor
+        super(name); // passes 'name' up; must be the first statement in the ctor
     }
 }
-
