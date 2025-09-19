@@ -10,8 +10,9 @@ public class Main {
         //
         // So, "%.2f" tells Java: "format this number as a floating-point with 2 decimal places"
         // The number 476578.09876 gets rounded to 476578.10.
-        // String result = String.format("I have %.2f, bugs to fix.", 476578.09876);
-        String result = String.format("I have %,.2f bugs to fix.", 476578.09876);
+        //String result = String.format("I have %,.2f bugs to fix.", 476578.09876);
+        String result = String.format("I have %.2f, bugs to fix.", 476578.09876);
+
 
         // Prints: I have 476578.10, bugs to fix.
         System.out.println(result);
