@@ -10,7 +10,7 @@ public class TestFormats {
 
         // Formatting the number with commas using String.format
         // "%,d" means: format this number (d = decimal integer) with commas
-        // String formattedNumber = String.format("%,d", myBillion); // will display without comma as that's locale default
+        //String formattedNumber = String.format("%,d", myBillion); // will display without comma as that's locale default
         String formattedNumber = String.format(Locale.US, "%,d", myBillion); //will display with comma as forcing to US locale default
 
         // Printing the formatted number to the console
